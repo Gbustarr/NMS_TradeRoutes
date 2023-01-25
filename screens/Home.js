@@ -1,18 +1,32 @@
 
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import TradeStation_Actual from '../components/TradeStation_Actual';
 
 
-const Home = ()=>{
+const Home = () => {
 
     return (
-        <View>
-            <Text>ti</Text>
-            <StatusBar style='auto'/>
-        </View>
+        <SafeAreaView >
+
+            <View style={styles.ActualTradeStation}>
+                <TradeStation_Actual />
+            </View>
+            
+  
+
+        </SafeAreaView>
     )
 
 };
+
+const styles = StyleSheet.create({
+    ActualTradeStation: {
+        paddingTop: 100,
+        height: 100,
+        flexDirection: 'row',
+    }
+});
 
 export default Home;

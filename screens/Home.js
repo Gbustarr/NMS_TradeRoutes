@@ -1,9 +1,10 @@
 
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import TradeStation_Actual from '../components/TradeStation_Actual';
 import HeaderHelper from '../components/HeaderHelper';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 
 const Home = () => {
@@ -20,7 +21,6 @@ const Home = () => {
                 </View>
                 
             </View>
-
 
 
         </SafeAreaView>

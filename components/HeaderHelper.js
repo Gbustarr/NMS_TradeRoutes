@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
 import Route3Econ from './Route3Econ';
 import Route4Econ from './Route4Econ';
+import TradeStation_Previous from './TradeStation_Previous';
 
 
 //<Route4Econ></Route4Econ>
@@ -9,7 +10,7 @@ const HeaderHelper = () => {
     return (
         <View style={styles.Contenedor}>
             <View style={styles.PreviousContainer}>
-                <Text>Estación anterior</Text>
+                <TradeStation_Previous></TradeStation_Previous>
             </View>
             <View style={styles.RouteContainer}>
                 <Route3Econ></Route3Econ>

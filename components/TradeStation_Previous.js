@@ -8,34 +8,21 @@ const TradeStation_Actual = () => {
 
     return (
         <TouchableOpacity style={styles.Card}>
-            <View style={styles.IconContainer}>
 
-                <Image source={ImageAssets.Econ_Comercio} style={styles.Icon}></Image>
-                <Text style={styles.EconomyLevelText}> Comercio </Text>
-            </View>
-            <View style={styles.CircleContainer}>
-                <View style={styles.Circle1}></View>
-                <View style={styles.Circle2}></View>
-                <View style={styles.Circle3}></View>
-            </View>
-            <View style={styles.InfoContainer}>
-                <Text style={styles.InfoTitleText}>Base Oxford</Text>
-                <Text style={styles.InfoSubTitleText}>Rico</Text>
-            </View>
-            <View style={styles.ButtonsContainer}>
-                <View style={{ flex: 1 }}>
-                    <TouchableOpacity style={styles.Button}>
-                        <Text style={{ textAlign: 'center',fontSize:11 }}>Editar</Text>
-                    </TouchableOpacity>
+                <View style={styles.IconContainer}>
+                    <Image source={ImageAssets.Econ_Tecnologia} style={styles.Icon}></Image>
                 </View>
-                <View style={{ flex: 2, }}>
-                    <TouchableOpacity style={styles.Button}>
-                        <Text style={{ textAlign: 'center' }}>Registrar Visita</Text>
-                    </TouchableOpacity>
+                <View style={styles.CircleContainer}>
+                    <View style={styles.Circle1}></View>
+                    <View style={styles.Circle2}></View>
+                    <View style={styles.Circle3}></View>
                 </View>
-
-
-            </View>
+                <View style={styles.InfoContainer}>
+                    <Text style={styles.InfoTitleText}>Base Andromeda</Text>
+                </View>
+                <View style={styles.ButtonsContainer}>
+                </View>
+          
         </TouchableOpacity>
     )
 
@@ -47,7 +34,7 @@ const TradeStation_Actual = () => {
 //Mineria: #fe7f25
 //Fabricación: #fe7f25
 //Generación de energias: #fe7f25
-//Tecnologia: #fe7f25
+//Tecnologia: #9ad9ea
 
 const styles = StyleSheet.create({
     Card: {
@@ -56,7 +43,7 @@ const styles = StyleSheet.create({
         paddingLeft: 10,
         paddingRight: 10,
         paddingBottom: 10,
-        backgroundColor: '#3e46cc',
+        backgroundColor: 'white',
         height: 130,
         flexDirection: 'row',
         elevation: 10,
@@ -102,54 +89,43 @@ const styles = StyleSheet.create({
         //height: 110,
         //backgroundColor: 'green',
     },
-    Button: {
-        padding: 1,
-        backgroundColor: 'rgb(200,200,200)',
-        borderRadius: 2,
-        elevation: 5,
-        color: 'black',
-
-
-    },
+    
     Circle1: {
-        width: 15,
-        height: 15,
-        borderRadius: 15 / 2,
-        backgroundColor: "green",
+        width: 5,
+        height: 5,
+        borderRadius: 5 / 2,
+        backgroundColor: "gray",
         elevation: 5,
     },
     Circle2: {
-        width: 15,
-        height: 15,
-        borderRadius: 15 / 2,
-        backgroundColor: "green",
+        width: 5,
+        height: 5,
+        borderRadius: 5 / 2,
+        backgroundColor: "gray",
         elevation: 5,
     },
     Circle3: {
-        width: 15,
-        height: 15,
-        borderRadius: 15 / 2,
-        backgroundColor: "green",
+        width: 5,
+        height: 5,
+        borderRadius: 5 / 2,
+        backgroundColor: "red",
         elevation: 5,
     },
     Icon: {
 
-        height: 80,
-        width: 80,
+        height: 20,
+        width: 20,
     },
-    EconomyLevelText: {
-        textAlign: 'center',
-        color: 'white',
-    },
+    
     InfoTitleText: {
         textAlign: 'center',
-        fontSize: 20,
-        color: 'white',
+        fontSize: 10,
+        color: 'black',
     },
     InfoSubTitleText: {
         textAlign: 'center',
-        fontSize: 15,
-        color: 'white',
+        fontSize: 8,
+        color: 'black',
     },
 
 });
